@@ -46,6 +46,18 @@ org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4
 ```
 
 
+The solution from [@dkhalanskyjb](https://github.com/dkhalanskyjb) is:
+
+Your project uses an old version of the compiler. Only Kotlin > 1.7.0 is supported in coroutines 1.6.0 and above. When I replace
+
+    `kotlin-dsl`
+
+in the plugins block in your build.gradle.kts with
+
+    kotlin("jvm") version "1.7.20"
+
+everything starts to work.
+
 October 2022
 
 

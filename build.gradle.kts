@@ -1,7 +1,7 @@
 // apply(plugin = "java-library")
 
 plugins {
-    `kotlin-dsl`
+    kotlin("jvm") version "1.7.20"
 }
 
 group = "uk.co.xenonique.learn"
